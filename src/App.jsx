@@ -108,114 +108,7 @@ const [scroll, setScroll] = useState(false);
 
 
  <div className="container-fluid">
-      {/* <nav
-        className={`navbar fixed-top navbar-expand-lg ${
-          scroll ? 'scrolled-navbar' : 'transparent-navbar'
-        }`}
-      >
-        <div className="container-fluid">
-          <a className="navbar-brand" href="/">
-            <span
-              style={{
-                fontFamily: '"Pacifico", cursive',
-                color: scroll ? '#f87721' : '#ffffff',
-                marginLeft: 5,
-                fontSize: 20,
-              }}
-            >
-              Burger O'Clock
-            </span>
-          </a>
-          <span>
-            <button
-              className="navbar-toggler"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#navbarSupportedContent"
-              aria-controls="navbarSupportedContent"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-            >
-              <a
-                className="btn btn-"
-                data-bs-toggle="offcanvas"
-                href="#offcanvasExample"
-                role="button"
-                aria-controls="offcanvasExample"
-              >
-                <i className="fa-solid fa-bars" style={{ color: '#ffd034' }} />
-              </a>
-            </button>
-            <div
-              className="offcanvas offcanvas-start"
-              tabIndex={-1}
-              id="offcanvasExample"
-              aria-labelledby="offcanvasExampleLabel"
-              style={{ backgroundColor: '#ffffff' }}
-            >
-              <div className="offcanvas-header">
-                <h5 className="offcanvas-title" id="offcanvasExampleLabel">
-                  <span
-                    style={{
-                      fontFamily: '"Pacifico", cursive',
-                      color: '#ffd034',
-                      marginLeft: 5,
-                      fontSize: 20,
-                    }}
-                  >
-                    Burger O'Clock
-                  </span>
-                </h5>
-                <button
-                  type="button"
-                  className="btn-close text-reset"
-                  data-bs-dismiss="offcanvas"
-                  aria-label="Close"
-                />
-              </div>
-              <div className="offcanvas-body" >
-                <div>
-                  <ul className="navbar-nav mx-auto mb-2 mb-lg-0">
-                    <li className="nav-item">
-                      <a
-                        className={`nav-link ${scroll ? 'black-link' : 'black-link'}`}
-                        href="/"
-                       
-                      >
-                        Home
-                      </a>
-                    </li>
-                    <li className="nav-item">
-                      <a
-                        className={`nav-link ${scroll ? 'black-link' : 'black-link'}`}
-                        href="/About"
-                      >
-                        About
-                      </a>
-                    </li>
-                    <li className="nav-item">
-                      <a
-                        className={`nav-link ${scroll ? 'black-link' : 'black-link'}`}
-                        href="/Contact"
-                      >
-                        Contact
-                      </a>
-                    </li>
-                    <li className="nav-item">
-                      <a
-                        className={`nav-link ${scroll ? 'black-link' : 'black-link'}`}
-                        href="/Fimages"
-                      >
-                        Featured
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </span>
-        </div>
-      </nav> */}
+     
 
 
 
@@ -225,7 +118,7 @@ const [scroll, setScroll] = useState(false);
   }`}
 >
   <div className="container-fluid">
-    <a className="navbar-brand" href="/">
+    <Link className="navbar-brand" to="/">
       <span
         style={{
           fontFamily: '"Pacifico", cursive',
@@ -236,7 +129,7 @@ const [scroll, setScroll] = useState(false);
       >
         Prism
       </span>
-    </a>
+    </Link>
 
     {/* TOGGLER BUTTON (Only visible on mobile) */}
     <button
@@ -254,24 +147,24 @@ const [scroll, setScroll] = useState(false);
     <div className="collapse navbar-collapse d-none d-lg-block" id="navbarSupportedContent">
       <ul className="navbar-nav ms-auto mb-2 mb-lg-0 desktop-nav">
         <li className="nav-item">
-          <a className="nav-link " href="/" style={{ color: scroll ? '#000' : '#fff' }}>
+          <Link className="nav-link " to="/" style={{ color: scroll ? '#000' : '#fff' }}>
             Home
-          </a>
+          </Link>
         </li>
         <li className="nav-item">
-          <a className="nav-link " href="/About" style={{ color: scroll ? '#000' : '#fff' }}>
+          <Link className="nav-link " to="/About" style={{ color: scroll ? '#000' : '#fff' }}>
             About
-          </a>
+          </Link>
         </li>
         <li className="nav-item">
-          <a className="nav-link " href="/Contact" style={{ color: scroll ? '#000' : '#fff' }}>
+          <Link className="nav-link " to="/Contact" style={{ color: scroll ? '#000' : '#fff' }}>
             Contact
-          </a>
+          </Link>
         </li>
         <li className="nav-item">
-          <a className="nav-link " href="/Fimages" style={{ color: scroll ? '#000' : '#fff' }}>
+          <Link className="nav-link " to="/Fimages" style={{ color: scroll ? '#000' : '#fff' }}>
             Featured
-          </a>
+          </Link>
         </li>
 <li className="nav-item dropdown">
   <a
@@ -286,9 +179,9 @@ const [scroll, setScroll] = useState(false);
     Collections
   </a>
   <ul className="dropdown-menu" aria-labelledby="menuDropdown">
-    <li><a className="dropdown-item" href="/Drone">Drone</a></li>
-    <li><a className="dropdown-item" href="/Landscape">Landscape</a></li>
-    <li><a className="dropdown-item" href="/Wildlife">Wildlife</a></li>
+    <li><Link className="dropdown-item" to="/Drone">Drone</Link></li>
+    <li><Link className="dropdown-item" to="/Landscape">Landscape</Link></li>
+    <li><Link className="dropdown-item" to="/Wildlife">Wildlife</Link></li>
   </ul>
 </li>
 
@@ -328,24 +221,24 @@ const [scroll, setScroll] = useState(false);
     <div className="offcanvas-body">
       <ul className="navbar-nav mx-auto mb-2 mb-lg-0 offcanvas-nav">
         <li className="nav-item">
-          <a className="nav-link offcanvas-link" href="/" style={{ color: scroll ? '#000' : '#000' }}>
+          <Link className="nav-link offcanvas-link" to="/" style={{ color: scroll ? '#000' : '#000' }}>
             Home
-          </a>
+          </Link>
         </li>
         <li className="nav-item">
-          <a className="nav-link offcanvas-link" href="/About" style={{ color: scroll ? '#000' : '#000' }}>
+          <Link className="nav-link offcanvas-link" to="/About" style={{ color: scroll ? '#000' : '#000' }}>
             About
-          </a>
+          </Link>
         </li>
         <li className="nav-item">
-          <a className="nav-link offcanvas-link" href="/Contact" style={{ color: scroll ? '#000' : '#000' }}>
+          <Link className="nav-link offcanvas-link" to="/Contact" style={{ color: scroll ? '#000' : '#000' }}>
             Contact
-          </a>
+          </Link>
         </li>
         <li className="nav-item">
-          <a className="nav-link offcanvas-link" href="/Fimages" style={{ color: scroll ? '#000' : '#000' }}>
+          <Link className="nav-link offcanvas-link" to="/Fimages" style={{ color: scroll ? '#000' : '#000' }}>
             Featured
-          </a>
+          </Link>
         </li>
         <li className="nav-item">
   <div className="dropdown">
@@ -361,9 +254,9 @@ const [scroll, setScroll] = useState(false);
       Collections
     </a>
     <ul className="dropdown-menu" aria-labelledby="offcanvasMenuDropdown">
-       <li><a className="dropdown-item" href="/Drone">Drone</a></li>
-    <li><a className="dropdown-item" href="/Landscape">Landscape</a></li>
-    <li><a className="dropdown-item" href="/Wildlife">Wildlife</a></li>
+    <li><Link className="dropdown-item" to="/Drone">Drone</Link></li>
+    <li><Link className="dropdown-item" to="/Landscape">Landscape</Link></li>
+    <li><Link className="dropdown-item" to="/Wildlife">Wildlife</Link></li>
     </ul>
   </div>
 </li>
@@ -399,16 +292,16 @@ const [scroll, setScroll] = useState(false);
         <div className="col-6 col-md-2 mb-3">
           <h3 style={{color: '#fcf373'}}>Section</h3>
           <ul className="nav flex-column">
-            <li className="nav-item mb-2"><a href="/" className="nav-link p-0 " style={{color: '#ffffff'}}>Home</a></li>
-            <li className="nav-item mb-2"><a href="/Fimages" className="nav-link p-0 " style={{color: '#ffffff'}}>Featured Images</a></li>
+            <li className="nav-item mb-2"><Link to="/" className="nav-link p-0 " style={{color: '#ffffff'}}>Home</Link></li>
+            <li className="nav-item mb-2"><Link to="/Fimages" className="nav-link p-0 " style={{color: '#ffffff'}}>Featured Images</Link></li>
           </ul>
         </div>
         <div className="col-6 col-md-2 mb-3">
           <h3 style={{color: '#fcf373'}}>Section</h3>
           <ul className="nav flex-column">
-            <li className="nav-item mb-2"><a href="/Drone" className="nav-link p-0 " style={{color: '#ffffff'}}>Drone Photography</a></li>
-            <li className="nav-item mb-2"><a href="/Wildlife" className="nav-link p-0 " style={{color: '#ffffff'}}>Wildlife Photography</a></li>
-            <li className="nav-item mb-2"><a href="/Landscape" className="nav-link p-0 " style={{color: '#ffffff'}}>Landscape Photography</a></li>
+            <li className="nav-item mb-2"><Link to="/Drone" className="nav-link p-0 " style={{color: '#ffffff'}}>Drone Photography</Link></li>
+            <li className="nav-item mb-2"><Link to="/Wildlife" className="nav-link p-0 " style={{color: '#ffffff'}}>Wildlife Photography</Link></li>
+            <li className="nav-item mb-2"><Link to="/Landscape" className="nav-link p-0 " style={{color: '#ffffff'}}>Landscape Photography</Link></li>
           </ul>
         </div>
         <div className="col-md-5 offset-md-1 mb-3">
