@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const Home = () => {
   return (
@@ -91,7 +92,7 @@ const Home = () => {
           <div className="carousel-caption  d-md-block" style={{marginBottom: 40}}>
             <h1 style={{fontFamily: '"Poppins", sans-serif', fontWeight: 700, fontSize: 50}}>Prism Photography</h1>
             <p>A platform to see high resolution photos</p>
-            <a className="btn btn- btn-" href="Featuredimages.html" role="button" id="mainbutton">Go and Explore</a>
+            <Link className="btn btn- btn-" to="Fimages" role="button" id="mainbutton">Go and Explore</Link>
           </div>
         </div>
       </div>
