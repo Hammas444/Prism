@@ -1,0 +1,192 @@
+/* :root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+} */
+
+
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arima:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Forum&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&family=Forum&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playball&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2&display=swap');
+*{
+
+    margin: 0;
+    padding: 0;
+
+}
+.logo{
+height: 40px;
+margin-bottom: 10px;
+
+}
+
+ion-icon{
+position: relative;
+animation: bat infinite 0.5s;
+
+}
+.navbar{
+  transition: 0.5s;
+ 
+}
+
+.navbar.scrolled{
+  background-color: rgb(255, 255, 255) !important;
+  transition: 0.5s;
+  box-shadow:0 5px 20px rgba(136, 132, 132, 0.685) ;
+  
+}
+
+.navbar.scrolled li a{
+  color: black  !important;
+}
+
+
+@keyframes bat{
+
+0%{
+  left: 0;
+}
+
+50%{
+    left: 5px;
+}
+
+100%{
+  left: 0;
+}
+}
+
+
+#brand:hover{
+box-shadow:var(--box-shadow) ;
+  transform: scale(1.1);
+}
+
+
+
+.nav-link{
+  color:rgb(255, 255, 255) ;font-family: 'Poppins', sans-serif;font-weight: 500;
+}
+
+
+.nav-link:hover{
+ 
+  color: rgb(241, 165, 24);
+
+ 
+ transition: 0.5s;
+}
+
+/* header{
+
+    height: 100vh;
+    width: 100vw;
+} */
+
+#mainbutton{
+  background-color:#DCE35B ;border-radius: 0%;
+}
+
+
+
+
+@media screen and (max-width:425px)
+{
+  .carousel-caption h1{
+    font-size: 25px !important;
+  
+  } 
+  .carousel-caption p{
+    font-size: 12px;
+    
+  } 
+  .carousel-caption{
+    margin-bottom: -1px !important;
+  }
+  
+  #mainbutton{
+  width: 130px;
+  font-size: 15px ;
+  }
+
+}
+
+
