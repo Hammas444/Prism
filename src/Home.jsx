@@ -112,7 +112,7 @@ const Home = () => {
   <div id="carouselExampleCaptions" className="carousel slide" data-bs-ride="carousel">
     <div className="carousel-inner">
       <div className="carousel-item active">
-        <img src="images/banner jpg.jpg" className="d-block w-100" alt="..." />
+        <img src="images/banner.jpg" className="d-block w-100" alt="..." />
         <div className="carousel-caption  d-md-block" style={{marginBottom: 40}}>
         </div>
       </div>
